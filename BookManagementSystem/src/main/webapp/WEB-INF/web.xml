@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>BookManagement</display-name>
+  <welcome-file-list>
+    <welcome-file>bookpage.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  <servlet-name>BookAddServlet</servlet-name>
+  <servlet-class>com.controller.BookAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookAddServlet</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>BookDeleteServlet</servlet-name>
+  <servlet-class>com.controller.BookDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookDeleteServlet</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>BookReadServlet</servlet-name>
+  <servlet-class>com.controller.BookReadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookReadServlet</servlet-name>
+  <url-pattern>/read</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>BookUpdateServlet</servlet-name>
+  <servlet-class>com.controller.BookUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookUpdateServlet</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+   <servlet-name>BookShortServlet</servlet-name>
+  <servlet-class>com.controller.BookShortServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookShortServlet</servlet-name>
+  <url-pattern>/sort</url-pattern>
+  </servlet-mapping>
+  
+   
+  <servlet>
+   <servlet-name>BookShortByName</servlet-name>
+  <servlet-class>com.controller.BookShortByName</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookShortByName</servlet-name>
+  <url-pattern>/name</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>BookShortReverseServlet</servlet-name>
+  <servlet-class>com.controller.BookShortReverseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookShortReverseServlet</servlet-name>
+  <url-pattern>/rev</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>BookSearchidServlet</servlet-name>
+  <servlet-class>com.controller.BookSearchidServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookSearchidServlet</servlet-name>
+  <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
